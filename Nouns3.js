@@ -1,4 +1,3 @@
-
 class Noun {
   constructor(nominative, genitive, gender, singMeaning, plMeaning){
     this.nominative = nominative;
@@ -585,7 +584,7 @@ function startGame(){
   console.log(rNFindx);
   console.log(ranNounForm[rNFindx]);
 
-  document.getElementById("label").innerHTML = "What is the " + ranNounForm[rNFindx][2] + " of " + nounArray[0] + "?";
+  document.getElementById("label").innerHTML = "What is the " + ranNounForm[rNFindx][2] + " of " + nounArray[0] + "!\" (N.B. " + nounArray[0] + ", " + nounArray[1] + ", " + nounArray[2] + ", " + nounArray[3] + ")";
   document.getElementById("submit").onclick = function(){checkAnswer()};
   // document.getElementById("label2").style.display = "none";
   latinForm = ranNounForm[rNFindx][0].normalize('NFD').replace(/[\u0300-\u036f]/g, "");
